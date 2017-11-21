@@ -11,6 +11,11 @@ spark.conf.set("fs.azure.account.key.STORAGE_ACCOUNT.blob.core.windows.net","ACC
 
 // COMMAND ----------
 
+// Set Azure Storage Account SAS
+spark.conf.set( "fs.azure.sas.CONTAINER.STORAGE_ACCOUNT.blob.core.windows.net", "SAS_TOKEN_FOR_CONTAINER") 
+
+// COMMAND ----------
+
 display(dbutils.fs.ls("wasbs://CONTAINER@STORAGE_ACCOUNT.blob.core.windows.net/example/data"))
 
 // COMMAND ----------
