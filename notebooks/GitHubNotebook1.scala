@@ -5,3 +5,4 @@
 // MAGIC lsblk
 // MAGIC du -h
 // MAGIC top
+// MAGIC top
